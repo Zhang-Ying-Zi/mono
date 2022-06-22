@@ -11,7 +11,7 @@ export function Button({ children, ...props }: ButtonProps) {
   //   React.useEffect(() => {
   //     console.log('something');
   //   }, []);
-  // }
+  // } 
 
   return (
     <button style={{ padding: '16px' }} {...props}>
