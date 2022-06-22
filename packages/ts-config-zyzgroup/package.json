@@ -1,6 +1,6 @@
 {
-  "name": "ts-config-bigstair",
-  "version": "0.0.0",
+  "name": "ts-config-zyzgroup",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "main": "index.js",

@@ -45,8 +45,8 @@ Using Turborepo simplifes managing your design system monorepo, as you can have 
 This Turborepo includes the following packages and applications:
 
 - `apps/docs`: Component documentation site with Storybook
-- `packages/@bigstair/core`: Core React components
-- `packages/ts-config-bigstair`: Shared `tsconfig.json`s used throughout the Turborepo
+- `packages/@zyzgroup/core`: Core React components
+- `packages/ts-config-zyzgroup`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/eslint-preset-acme`: ESLint preset
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Yarn Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-W` workspaces flag with `yarn add`.
@@ -59,17 +59,17 @@ To make the core library code work across all browsers, we need to compile the r
 
 Running `yarn build` from the root of the Turborepo will run the `build` command defined in each package's `package.json` file. Turborepo runs each `build` in parallel and caches & hashes the output to speed up future builds.
 
-For `bigstair-core`, the `build` command is the following:
+For `zyzgroup-core`, the `build` command is the following:
 
 ```bash
 tsup src/index.tsx --format esm,cjs --dts --external react
 ```
 
-`tsup` compiles `src/index.tsx`, which exports all of the components in the design system, into both ES Modules and CommonJS formats as well as their TypeScript types. The `package.json` for `bigstair-core` then instructs the consumer to select the correct format:
+`tsup` compiles `src/index.tsx`, which exports all of the components in the design system, into both ES Modules and CommonJS formats as well as their TypeScript types. The `package.json` for `zyzgroup-core` then instructs the consumer to select the correct format:
 
-```json:bigstair-core/package.json
+```json:zyzgroup-core/package.json
 {
-  "name": "@bigstair/core",
+  "name": "@zyzgroup/core",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -78,10 +78,10 @@ tsup src/index.tsx --format esm,cjs --dts --external react
 }
 ```
 
-Run `yarn build` to confirm compilation is working correctly. You should see a folder `bigstair-core/dist` which contains the compiled output.
+Run `yarn build` to confirm compilation is working correctly. You should see a folder `zyzgroup-core/dist` which contains the compiled output.
 
 ```bash
-bigstair-core
+zyzgroup-core
 └── dist
     ├── index.d.ts  <-- Types
     ├── index.js    <-- CommonJS version
@@ -90,9 +90,9 @@ bigstair-core
 
 ## Components
 
-Each file inside of `bigstair-core/src` is a component inside our design system. For example:
+Each file inside of `zyzgroup-core/src` is a component inside our design system. For example:
 
-```tsx:bigstair-core/src/Button.tsx
+```tsx:zyzgroup-core/src/Button.tsx
 import * as React from 'react';
 
 export interface ButtonProps {
@@ -108,7 +108,7 @@ Button.displayName = 'Button';
 
 When adding a new file, ensure the component is also exported from the entry `index.tsx` file:
 
-```tsx:bigstair-core/src/index.tsx
+```tsx:zyzgroup-core/src/index.tsx
 import * as React from "react";
 export { Button, type ButtonProps } from "./Button";
 // Add new component exports here
@@ -120,13 +120,13 @@ Storybook provides us with an interactive UI playground for our components. This
 
 - Use Vite to bundle stories instantly (in milliseconds)
 - Automatically find any stories inside the `stories/` folder
-- Support using module path aliases like `@bigstair-core` for imports
+- Support using module path aliases like `@zyzgroup-core` for imports
 - Write MDX for component documentation pages
 
 For example, here's the included Story for our `Button` component:
 
 ```js:apps/docs/stories/button.stories.mdx
-import { Button } from '@bigstair-core/src';
+import { Button } from '@zyzgroup-core/src';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Button" component={Button} />
