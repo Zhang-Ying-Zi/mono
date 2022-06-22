@@ -9,7 +9,7 @@ export interface ButtonProps {
 export function Button({ children, ...props }: ButtonProps) {
   // if (false) {
   //   React.useEffect(() => {
-  //     console.log('asd');
+  //     console.log('something');
   //   }, []);
   // }
 
