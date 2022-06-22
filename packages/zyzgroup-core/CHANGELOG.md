@@ -1,5 +1,11 @@
 # @zyzgroup/core
 
+## 1.1.1
+
+### Patch Changes
+
+- ed35165: test github CI
+
 ## 1.1.0
 
 ### Minor Changes
