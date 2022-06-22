@@ -1,5 +1,11 @@
 # @zyzgroup/core
 
+## 1.1.2
+
+### Patch Changes
+
+- 65bfc38: test
+
 ## 1.1.1
 
 ### Patch Changes
