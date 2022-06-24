@@ -1,0 +1,10 @@
+dist/
+build/
+coverage/
+node_modules/
+lib/
+.eslintrc.js
+.lintstagedrc.js
+.prettierrc.js
+.stylelintrc.js
+jest.config.js

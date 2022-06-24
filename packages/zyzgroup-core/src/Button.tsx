@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 
 export interface ButtonProps {
-  type?: 'button' | 'submit' | 'reset' | undefined;
+  type?: "button" | "submit" | "reset" | undefined;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
 }
@@ -11,13 +11,13 @@ export function Button({ children, ...props }: ButtonProps) {
   //   React.useEffect(() => {
   //     console.log('something');
   //   }, []);
-  // } 
+  // }
 
   return (
-    <button style={{ padding: '16px' }} {...props}>
+    <button style={{ padding: "16px" }} {...props}>
       {children}
     </button>
   );
 }
 
-Button.displayName = 'Button';
+Button.displayName = "Button";
