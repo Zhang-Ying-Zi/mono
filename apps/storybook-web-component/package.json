@@ -1,5 +1,5 @@
 {
-  "name": "web-components-storybook",
+  "name": "storybook-web-component",
   "version": "1.0.0",
   "description": "A component library that demonstrates how to integrate Web Components with Storybook.",
   "main": "index.ts",

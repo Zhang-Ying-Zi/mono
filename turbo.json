@@ -18,6 +18,10 @@
     },
     "clean": {
       "cache": false
+    },
+    // yarn storybook --scope=storybook-web-component
+    "storybook": {
+      "cache": false
     }
   }
 }
