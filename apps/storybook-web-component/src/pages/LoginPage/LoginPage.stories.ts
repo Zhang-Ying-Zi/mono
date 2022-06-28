@@ -4,9 +4,14 @@ import * as HeaderStories from '../../components/Header/Header.stories';
 
 export default {
   title: 'PAGES/LoginPage',
+  argTypes: {
+    onLogin: { action: 'onLogin' },
+    onLogout: { action: 'onLogout' },
+    onCreateAccount: { action: 'onCreateAccount' },
+  }
 } as Meta;
 
-const Template: Story<Partial<PageProps>> = (args) => Page(args);
+const Template: Story<PageProps> = (args) => Page(args);
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {

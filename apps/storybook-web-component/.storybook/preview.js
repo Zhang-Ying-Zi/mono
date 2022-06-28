@@ -6,4 +6,8 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+
+// export const decorators = [
+//   (story) => `<div style="margin: 4rem 0 0 4rem;">${story()}</div>`,
+// ];

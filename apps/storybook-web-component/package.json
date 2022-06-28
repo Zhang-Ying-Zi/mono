@@ -19,6 +19,7 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
     "@storybook/builder-webpack5": "^6.5.9",
     "@storybook/manager-webpack5": "^6.5.9",
@@ -35,6 +36,5 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.60.2",
     "typescript": "^4.5.2"
-  },
-  "dependencies": {}
+  }
 }
