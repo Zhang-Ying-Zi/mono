@@ -12,4 +12,28 @@ module.exports = {
   core: {
     builder: "@storybook/builder-webpack5",
   },
+  // async viteFinal(config, { configType }) {
+  //   // customize the Vite config here
+  //   return {
+  //     ...config,
+  //     resolve: {
+  //       alias: [
+  //         {
+  //           find: "@zyzgroup/core",
+  //           replacement: path.resolve(
+  //             __dirname,
+  //             "../../../packages/zyzgroup-core/"
+  //           ),
+  //         },
+  //         {
+  //           find: "@zyzgroup/map",
+  //           replacement: path.resolve(
+  //             __dirname,
+  //             "../../../packages/zyzgroup-map/"
+  //           ),
+  //         },
+  //       ],
+  //     },
+  //   };
+  // },
 };

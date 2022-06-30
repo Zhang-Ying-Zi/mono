@@ -1,0 +1,29 @@
+{
+  "name": "generator-zyzgroup",
+  "version": "0.0.1",
+  "description": "generator for all",
+  "main": "generators/sf/index.js",
+  "scripts": {
+    "link": "npm link",
+    "generate": "yo zyz:webpack",
+    "postpublish": "git push origin master"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "generators"
+  ],
+  "author": {
+    "name": "Zhang-Ying-Zi",
+    "email": "489573239@qq.com",
+    "url": "https://github.com/Zhang-Ying-Zi"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mkdirp": "^1.0.4",
+    "yeoman-generator": "^4.13.0",
+    "yeoman-remote": "^1.0.1"
+  }
+}

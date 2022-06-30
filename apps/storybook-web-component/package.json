@@ -9,7 +9,8 @@
     "prepublishOnly": "copyfiles package.json dist",
     "lint": "eslint . --ext .ts",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=e919fdafc55b"
   },
   "license": "MIT",
   "devDependencies": {
@@ -27,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.6.4",
     "copyfiles": "^2.4.1",
     "eslint": "^8.4.1",
     "eslint-plugin-storybook": "^0.5.3",
@@ -37,5 +39,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.60.2",
     "typescript": "^4.5.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "storybook-web-component@1.0.0"
 }

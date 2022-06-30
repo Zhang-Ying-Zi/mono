@@ -11,6 +11,12 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    expanded: false,
+    // presetColors: [
+    //   { color: "#ff4785", title: "Coral" },
+    //   "rgba(0, 159, 183, 1)",
+    //   "#fe4a49",
+    // ],
   },
 };
 
