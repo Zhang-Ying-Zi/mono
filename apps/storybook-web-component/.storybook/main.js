@@ -9,21 +9,21 @@ module.exports = {
   core: {
     builder: "@storybook/builder-webpack5",
   },
-  refs: {
-    react: {
-      title: "React",
-      url: "http://localhost:6007",
-      expanded: false,
-    },
-    angular: {
-      title: "Angular",
-      url: "http://localhost:6008",
-      expanded: false,
-    },
-    vue: {
-      title: "Vue",
-      url: "http://localhost:6009",
-      expanded: false,
-    },
-  },
+  // refs: {
+  //   react: {
+  //     title: "React",
+  //     url: "http://localhost:6007",
+  //     expanded: false,
+  //   },
+  //   angular: {
+  //     title: "Angular",
+  //     url: "http://localhost:6008",
+  //     expanded: false,
+  //   },
+  //   vue: {
+  //     title: "Vue",
+  //     url: "http://localhost:6009",
+  //     expanded: false,
+  //   },
+  // },
 };

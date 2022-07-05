@@ -1,3 +1,5 @@
+// .storybook/preview.js
+
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import scss from "react-syntax-highlighter/dist/esm/languages/prism/scss";
 
@@ -44,12 +46,10 @@ export const parameters = {
 //////////// consume new theme global in a decorator using the context.globals.theme value
 // import { ThemeProvider } from "styled-components";
 // import { MyThemes } from "../my-theme-folder/my-theme-file";
-
 // // Function to obtain the intended theme
 // const getTheme = (themeName) => {
 //   return MyThemes[themeName];
 // };
-
 // const withThemeProvider = (Story, context) => {
 //   const theme = getTheme(context.globals.theme);
 //   return (

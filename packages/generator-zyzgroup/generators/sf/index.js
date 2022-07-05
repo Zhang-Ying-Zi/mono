@@ -81,7 +81,9 @@ module.exports = class extends Generator {
     // Render Files
     // config.filesToRender.forEach((file) => {
     //   if (!file.if || templateData[file.if]) {
-    // copyTpl(file.input, file.output, templateData);
+    //      copyTpl(file.input, file.output, templateData);
+    //   }
+    // });
     switch (templateData.fileType.toLowerCase()) {
       case "svg":
         copyTpl("svg.tpl", templateData.fileName + ".svg", templateData);
@@ -104,8 +106,6 @@ module.exports = class extends Generator {
         copyTpl("html.tpl", templateData.fileName + ".html", templateData);
         break;
     }
-    //   }
-    // });
 
     // Copy Files
     config.filesToCopy.forEach((file) => {

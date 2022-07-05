@@ -126,7 +126,7 @@ module.exports = class extends Generator {
 
     // Get Remote Templates
     let done = this.async();
-    remote("Zhang-Ying-Zi", "monorepo", (err, cachePath) => {
+    remote("Zhang-Ying-Zi", "mono", (err, cachePath) => {
       // Copy Files
       config.filesToCopy.forEach((file) => {
         if (!file.if || templateData[file.if]) {

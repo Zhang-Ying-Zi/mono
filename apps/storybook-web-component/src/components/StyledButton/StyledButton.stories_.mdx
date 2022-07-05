@@ -1,0 +1,49 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import "./StyledButton";
+
+<Meta
+  title="COMPONENTS/StyledButton"
+  parameters={{
+    backgrounds: {
+      default: "green",
+      values: [
+        { name: "blue", value: "#0e83cd" },
+        { name: "red", value: "#f06060" },
+        { name: "yellow", value: "#fcd04b" },
+        { name: "green", value: "#2ecc71" },
+      ],
+    },
+  }}
+  args={{
+    onClick: (e) => {
+      console.log("stories: ", e);
+    },
+  }}
+/>
+
+<style></style>
+
+export const Template = (args, globals) => {
+  console.log(args, globals);
+  return `<styled-button class=${args.classes} onClick='${args.onClick}'></styled-button>`;
+};
+
+{" "}
+<Canvas>
+  <Story
+    name="type1"
+    args={{
+      classes: "btn-type1",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="type2"
+    args={{
+      classes: "btn-type2",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

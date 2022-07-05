@@ -1,19 +1,26 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "baseUrl": "./",
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "target": "es3",
+    "module": "esnext",
     "moduleResolution": "node",
-    "module": "ES2015",
-    "target": "ES2015",
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "emitDeclarationOnly": true,
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom", "dom.iterable"],
-    "types": ["@types/node"]
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2017", "dom", "dom.iterable"]
+    // "rootDir": "./",
+    // "esModuleInterop": false
+    // "allowJs": true,
+    // "baseUrl": "./",
+    // "experimentalDecorators": true,
+    // "allowSyntheticDefaultImports": true
+    // "declaration": true,
+    // "declarationDir": "dist/types",
+    // "emitDeclarationOnly": true,
+    // "typeRoots": ["node_modules/@types"],
+    // "types": ["@types/node"]
   },
   "include": ["./**/*.ts"],
-  "exclude": ["./**/*.stories.js", "./dist"]
+  "exclude": ["node_modules", "./**/*.stories.js", "./dist"]
 }

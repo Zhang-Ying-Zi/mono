@@ -7,7 +7,7 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/web-components/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
-    onClick: { action: 'onClick' },
+    onClick: { action: 'onClicked' },
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],

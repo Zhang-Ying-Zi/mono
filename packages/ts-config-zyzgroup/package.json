@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "files": [
-    "base.js",
+    "base.json",
     "react-library.json"
   ]
 }
