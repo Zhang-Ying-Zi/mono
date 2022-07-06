@@ -84,12 +84,28 @@ module.exports = class extends Generator {
     //      copyTpl(file.input, file.output, templateData);
     //   }
     // });
-    switch (templateData.fileType.toLowerCase()) {
+    switch (templateData.fileType) {
       case "svg":
         copyTpl("svg.tpl", templateData.fileName + ".svg", templateData);
         break;
       case "canvas":
         copyTpl("canvas.tpl", templateData.fileName + ".html", templateData);
+        break;
+      case "vue_sfc":
+        copyTpl("vue_sfc.tpl", templateData.fileName + ".vue", templateData);
+        break;
+      case "vue_cdn":
+        copyTpl("vue_cdn.tpl", templateData.fileName + ".html", templateData);
+        break;
+      case "vue_plugin":
+        copyTpl("vue_plugin.tpl", templateData.fileName + ".js", templateData);
+        break;
+      case "vue_customElement":
+        copyTpl(
+          "vue_customElement.tpl",
+          templateData.fileName + ".js",
+          templateData
+        );
         break;
       case "webcomponent":
         templateData.className = templateData.fileName

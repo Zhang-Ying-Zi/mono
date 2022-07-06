@@ -46,14 +46,14 @@ export default [
         name: "wcs",
         sourcemap: true,
       },
-      // 通用模块定义，以amd，cjs 和 iife 为一体
+      // umd 通用模块定义，以amd，cjs 和 iife 为一体
       {
         file: "./dist/bundles.umd.js",
         format: "umd",
         name: "wcs",
         sourcemap: true,
       },
-      // 将软件包保存为 ES 模块文件，在现代浏览器中可以通过 <script type=module> 标签引入
+      // esm 将软件包保存为 ES 模块文件，在现代浏览器中可以通过 <script type=module> 标签引入
       {
         file: "./dist/bundles.esm.js",
         format: "esm",

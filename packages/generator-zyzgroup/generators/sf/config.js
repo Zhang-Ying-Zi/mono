@@ -32,6 +32,26 @@ module.exports = {
           value: "webcomponent",
           checked: false,
         },
+        {
+          name: "vue sfc",
+          value: "vue_sfc",
+          checked: false,
+        },
+        {
+          name: "vue cdn",
+          value: "vue_cdn",
+          checked: false,
+        },
+        {
+          name: "vue plugin",
+          value: "vue_plugin",
+          checked: false,
+        },
+        {
+          name: "vue customElement",
+          value: "vue_customElement",
+          checked: false,
+        },
       ],
     },
     {

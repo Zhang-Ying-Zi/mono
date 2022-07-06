@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "<%= sfcName %>",
+  name: "<%= fileName %>",
   components: {},
   mixins: [],
   directives: {
